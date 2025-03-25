@@ -55,6 +55,14 @@ a {
 }
 </style>
 <body>
+     <script>
+        var correctPassword = "12345"; // Change this to your desired password
+        var userInput = prompt("Enter the password to access this page:");
+        if (userInput !== correctPassword) {
+            alert("Incorrect password!");
+            window.location.href = "about:blank"; // Redirect to blank page on wrong password
+        }
+    </script>
     <header>
         <h1>Security In Computing Practicals</h1>
         <!-- Download Button -->
